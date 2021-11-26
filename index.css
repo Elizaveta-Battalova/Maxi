@@ -1,14 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body, .wrapper{
-    height: 100%;
-    }
-    .wrapper{
-        width: 100%;
-    }
 body {
   display: flex;
   flex-direction: column;
@@ -96,54 +90,58 @@ h2 {
 .new p {
   color: #27ae60;
 }
-.toggle{
-    display: none;
+.toggle {
+  display: none;
 }
-footer{
-    background-color: #001441;
-    color: white;
+footer {
+  position: fixed;
+  background-color: #001441;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .intro-text {
+    display: block;
+  }
+  .video-cards {
+    flex-wrap: wrap;
+  }
+  nav a {
+    display: none;
+  }
+  .toggle {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px;
-}
-@media(max-width: 768px){
-    .intro-text{
-        display: block;
-    }
-    .video-cards{
-        flex-wrap: wrap;
-    }
-    nav a {
-        display: none;
-    }
-    .toggle{
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-    }
-    .intro a{
-        color: #001441;
-    }
+    justify-content: right;
+  }
+  .intro a {
+    color: #001441;
+  }
 }
 
-@media(max-width: 320px){
-    .intro-text{
-        display: block;
-    }
-    .video-cards{
-        flex-wrap: wrap;
-    }
-    nav a {
-        display: none;
-    }
-    .toggle{
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-    }
-    .intro a{
-        color: #001441;
-    }
+@media (max-width: 320px) {
+  .intro-text {
+    display: block;
+  }
+  .video-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav a {
+    display: none;
+  }
+  .toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+  .intro a {
+    color: #001441;
+  }
 }
