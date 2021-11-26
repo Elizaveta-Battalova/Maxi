@@ -76,6 +76,7 @@ video {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .video-cards video {
   height: 150px;
