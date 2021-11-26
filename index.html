@@ -29,118 +29,140 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <nav>
-        <h1>МАХИ</h1>
-        <ul>
-          <a href="#">О курсе</a>
-          <a href="#">Видео о курсе</a>
-          <a href="#">Что потребуется?</a>
-          <a href="#">Контакты</a>
-        </ul>
-        <a href="#">Выйти</a>
-        <img class="toggle" src="menu.png" alt="menu">
-      </nav>
-    <div class="container">
-      
-      <div class="intro">
-        <h1>Первый урок</h1>
-        <a href="#">все занятия</a>
-      </div>
-      <div class="description">
-        <p>
-          Вступительное описание, которое поможет настроиться, либо коротоко
-          введет в то, что будет в этом видео
-        </p>
-      </div>
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video
-              poster="2.png"
-              controls
-              src="3.mp4"
-              class="d-block w-100"
-            ></video>
+    <div class="wrapper">
+        <nav>
+            <h1>МАХИ</h1>
+            <ul>
+              <a href="#">О курсе</a>
+              <a href="#">Видео о курсе</a>
+              <a href="#">Что потребуется?</a>
+              <a href="#">Контакты</a>
+            </ul>
+            <a href="#">Выйти</a>
+            <img class="toggle" src="menu.png" alt="menu">
+          </nav>
+        <div class="container">
+          
+          <div class="intro">
+            <h1>Первый урок</h1>
+            <a href="#">все занятия</a>
           </div>
-          <div class="carousel-item">
-            <video
-              poster="2.png"
-              controls
-              src="4.mp4"
-              class="d-block w-100"
-            ></video>
+          <div class="description">
+            <p>
+              Вступительное описание, которое поможет настроиться, либо коротоко
+              введет в то, что будет в этом видео
+            </p>
           </div>
-          <div class="carousel-item">
-            <video
-              poster="2.png"
-              controls
-              src="5.mp4"
-              class="d-block w-100"
-            ></video>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video
+                  poster="2.png"
+                  controls
+                  src="3.mp4"
+                  class="d-block w-100"
+                ></video>
+              </div>
+              <div class="carousel-item">
+                <video
+                  poster="2.png"
+                  controls
+                  src="4.mp4"
+                  class="d-block w-100"
+                ></video>
+              </div>
+              <div class="carousel-item">
+                <video
+                  poster="2.png"
+                  controls
+                  src="5.mp4"
+                  class="d-block w-100"
+                ></video>
+              </div>
+              <div class="carousel-item">
+                <video
+                  poster="2.png"
+                  controls
+                  src="6.mp4"
+                  class="d-block w-100"
+                ></video>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-item">
-            <video
-              poster="2.png"
-              controls
-              src="6.mp4"
-              class="d-block w-100"
-            ></video>
+          <div class="intro-text">
+            <h1>Занятия по порядку</h1>
+            <a class="arrow" href="#">по порядку</a>
+            <a href="#">показывать недосутпные</a>
+          </div>
+          <div class="video-cards">
+            <div>
+                <video
+                poster="2.png"
+                controls
+                src="3.mp4"
+                class="d-block w-100"
+              ></video>
+              <h2>Всупительное занятие</h2>
+            </div>
+            <div>
+                <video
+                poster="2.png"
+                controls
+                src="3.mp4"
+                class="d-block w-100"
+              ></video>
+              <div class="new">
+                <h2>Первое занятие</h2>
+                <p>новое!</p>
+              </div>
+            </div>
+            <div>
+                <video
+                poster="2.png"
+                controls
+                src="3.mp4"
+                class="d-block w-100"
+              ></video>
+              <h2>Третий урок</h2>
+            </div>
+            <div>
+                <video
+                poster="2.png"
+                controls
+                src="3.mp4"
+                class="d-block w-100"
+              ></video>
+              <h2>Четвертый урок</h2>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="intro-text">
-        <h1>Занятия по порядку</h1>
-        <a class="arrow" href="#">по порядку</a>
-        <a href="#">показывать недосутпные</a>
-      </div>
-      <div class="video-cards">
-        <div>
-          <video controls src="3.mp4"></video>
-          <h2>Всупительное занятие</h2>
-        </div>
-        <div>
-          <video controls src="4.mp4"></video>
-          <div class="new">
-            <h2>Первое занятие</h2>
-            <p>новое!</p>
-          </div>
-        </div>
-        <div>
-          <video controls src="5.mp4"></video>
-          <h2>Третий урок</h2>
-        </div>
-        <div>
-          <video controls src="6.mp4"></video>
-          <h2>Четвертый урок</h2>
-        </div>
-      </div>
+        <footer>
+            <h3>Курс «МАХИ»</h3>
+            <p>Махи.рф © 2020</p>
+        </footer>
     </div>
-    <footer>
-        <h3>Курс «МАХИ»</h3>
-        <p>Махи.рф © 2020</p>
-    </footer>
     <script src="index.js"></script>
   </body>
 </html>

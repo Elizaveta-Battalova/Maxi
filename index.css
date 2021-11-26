@@ -1,4 +1,14 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, .wrapper{
+    height: 100%;
+    }
+    .wrapper{
+        width: 100%;
+    }
 body {
   display: flex;
   flex-direction: column;
@@ -99,6 +109,26 @@ footer{
     padding: 10px;
 }
 @media(max-width: 768px){
+    .intro-text{
+        display: block;
+    }
+    .video-cards{
+        flex-wrap: wrap;
+    }
+    nav a {
+        display: none;
+    }
+    .toggle{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+    .intro a{
+        color: #001441;
+    }
+}
+
+@media(max-width: 320px){
     .intro-text{
         display: block;
     }
